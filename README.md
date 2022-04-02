@@ -4,9 +4,9 @@ Contact: Gene Grove - gwg1387@gmail.com
 
 Associated Links
 
-GIT Pages Link: 
+GIT Pages Link: https://ggrove87.github.io/HW4-Code-Quiz/
 
-GIT Repository Link: 
+GIT Repository Link: https://github.com/ggrove87/HW4-Code-Quiz
 
 <br>
 
@@ -32,3 +32,20 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
+```
+
+<br>
+
+## Built With:
+
+* JavaScript
+* HTML 5
+* CSS
+
+
+## Mock-Up
+
+The following image shows the web application's appearance and functionality:
+
+<br>
+

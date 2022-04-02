@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-  <script src="./script.js"></script>
+    <div class="wrapper">
+        <header>
+            <h1>Code Quiz</h1>
+        </header>
+        <div class="card">
+            <div class="card-body">
+                <p> Try to answer the following code-related questions within the time given.</p>
+                <p>Incorrect answers will penalize you 10 seconds of your available 60 seconds.</p>
+            </div>
+           <div><h2 class="timer" style="text-align:right;"></h2></div>
+            <div class="card-footer">
+                <button id="startQuiz" class="btn">Start!</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/javascript/script.js"></script>
 </body>
+
 </html>
