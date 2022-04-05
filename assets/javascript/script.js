@@ -50,7 +50,7 @@ submitBtn.addEventListener("click", function (event) {
     console.log(JSON.stringify(currentScore));
     highScore.push(currentScore);
     localStorage.setItem("highScore", JSON.stringify(currentScore));
-    
+    window.location.href = "./highscore.html"
 })
 
 // lauches the quiz questions upon the user clicking the start button
