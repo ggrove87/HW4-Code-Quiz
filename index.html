@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="cardWrapper">
         <header>
             <h1>Code Quiz</h1>
         </header>
@@ -19,12 +19,34 @@
                 <p> Try to answer the following code-related questions within the time given.</p>
                 <p>Incorrect answers will penalize you 10 seconds of your available 60 seconds.</p>
             </div>
-           <div><h2 class="timer" style="text-align:right;"></h2></div>
+            <div>
+                <h2 class="timer" style="text-align:center;"></h2>
+            </div>
             <div class="card-footer">
                 <button id="startQuiz" class="btn">Start!</button>
             </div>
         </div>
     </div>
+    <div id="quizBody" style="display: none;">
+        <div id="quizQuestion">
+            <div id="answers">
+                <ol>
+                    <li><button id="answer1"></button></li>
+                    <li><button id="answer2"></button></li>
+                    <li><button id="answer3"></button></li>
+                    <li><button id="answer4"></button></li>
+                </ol>
+            </div>
+        </div>
+        <div id="answerCheck"></div>
+    </div>
+
+    <div id="finalScore" style="display: none;">
+        <h2>Here is your final score:</h2>
+        <p>Enter your initials</p>
+        <input id="userInitials" type="text">
+    </div>
+
     <script src="./assets/javascript/script.js"></script>
 </body>
 
