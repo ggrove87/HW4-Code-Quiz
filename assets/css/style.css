@@ -1,0 +1,19 @@
+html,
+body,
+#card {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: teal;
+  color: orange;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+}

@@ -10,45 +10,54 @@
 </head>
 
 <body>
+    <!-- displays the timer -->
     <header>
         <h2 id="timer"></h2>
-    </header>
-    <div class="cardWrapper">
-        <header>
+
+        <div class="cardWrapper"> </div>
+
             <h1>Code Quiz</h1>
-        </header>
-        <div class="card">
-            <div class="card-body">
-                <p> Try to answer the following code-related questions within the time given.</p>
-                <p>Incorrect answers will penalize you 10 seconds of your available 60 seconds.</p>
-            </div>
-            <div>
-                <h2 class="timer" style="text-align:center;"></h2>
-            </div>
-            <div class="card-footer">
-                <button id="startQuiz" class="btn" onclick="startQuiz()">Start!</button>
-            </div>
+    </header>
+    <div class="card">
+        <div class="card-body">
+            <p> Try to answer the following code-related questions within the time given.</p>
+            <p>Incorrect answers will penalize you 10 seconds of your available 60 seconds.</p>
+        </div>
+        <div>
+            <h2 class="timer" style="text-align:center;"></h2>
+        </div>
+        <div class="card-footer">
+            <button id="startQuiz" class="btn" >Start!</button>
         </div>
     </div>
-    <div id="quizBody" style="display: none;">
+    </div>
+    <!-- displays the quiz questions -->
+    <div id="quizBody" >
         <div id="quizQuestion">
+            <h2 id="question"></h2>
             <div id="answers">
-                <ol>
-                    <li><button id="answer1" onclick="checkAnswer(answer1)"></button></li>
-                    <li><button id="answer2" onclick="checkAnswer(answer2)"></button></li>
-                    <li><button id="answer3" onclick="checkAnswer(answer3)"></button></li>
-                    <li><button id="answer4" onclick="checkAnswer(answer4)"></button></li>
-                </ol>
+                <ul>
+                    <li><button id="answer1" ></button></li>
+                    <li><button id="answer2" ></button></li>
+                    <li><button id="answer3" ></button></li>
+                    <li><button id="answer4" ></button></li>
+                </ul>
             </div>
         </div>
         <div id="answerCheck"></div>
     </div>
 
-    <div id="finalScore" style="display: none;">
+    <!-- displays the score page  -->
+    <div id="scorePage">
+        <div id="userScore"></div>
         <h2>Here is your final score:</h2>
+        <p id="finalScore"></p>
         <p>Enter your initials</p>
         <input id="userInitials" type="text">
+        <a href="./highscore.html" alt="highScorePage"><button id="submit">Submit</button></a>
     </div>
+
+    <!-- display high score page -->
 
     <script src="./assets/javascript/script.js"></script>
 </body>
